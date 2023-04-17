@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Myhiber</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">Ranjeet@123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.use_sql_comments">true</property>
+        <mapping class="org.example.Student"/>
+        <mapping class="org.example.Address"/>
+        <mapping class="com.map.Answer"/>
+        <mapping class="com.map.Question"/>
+        <mapping class="com.map1.Emp"/>
+        <mapping class="com.map1.Project"/>
+
+    </session-factory>
+</hibernate-configuration>
+
+
+<!--#hibernate.connection.driver_class=org.postgresql.Driver-->
+<!--#hibernate.connection.url=jdbc:postgresql://localhost:5432/myhiber-->
+<!--#hibernate.connection.username= postgres-->
+<!--#hibernate.connection.password= Ranjeet@123-->
+<!--#  #spring.jpa.database = org.hibernate.dialect.PostgreSQLDialect-->
+<!--#hibernate.ddl-auto=update-->
+<!--#  #spring.jpa.database = org.hibernate.dialect.PostgreSQLDialect-->
+<!--#hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect-->
+<!--##server.port=8088-->
